@@ -2,6 +2,7 @@ import 'package:material_ui/material_ui.dart';
 import 'package:media_kit/media_kit.dart';
 import 'accounts_page.dart';
 import 'settings.dart';
+import 'app_info.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +21,7 @@ class IptvApp extends StatelessWidget {
       builder: (_, mode, _) => ValueListenableBuilder<Color>(
         valueListenable: accentNotifier,
         builder: (_, accent, _) => MaterialApp(
-          title: 'IPTV Player',
+          title: appName,
           debugShowCheckedModeBanner: false,
           themeMode: mode,
           theme: _buildTheme(accent, Brightness.light),

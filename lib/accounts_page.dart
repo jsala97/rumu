@@ -5,6 +5,7 @@ import 'speed_test_page.dart';
 import 'account_home_page.dart';
 import 'settings_page.dart';
 import 'progress_store.dart';
+import 'about_page.dart';
 
 String _normalize(String s) {
   s = s.trim();
@@ -291,6 +292,13 @@ class _AccountsPageState extends State<AccountsPage> {
             icon: const Icon(Icons.speed),
             onPressed: () => Navigator.of(context).push(
               MaterialPageRoute(builder: (_) => const SpeedTestPage()),
+            ),
+          ),
+          IconButton(
+            tooltip: 'Acerca de',
+            icon: const Icon(Icons.info_outline),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const AboutPage()),
             ),
           ),
 

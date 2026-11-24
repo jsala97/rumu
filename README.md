@@ -1,6 +1,6 @@
-# IPTV Player
+# Rumu
 
-Reproductor IPTV de escritorio para Windows, hecho con Flutter.
+Rumu es un reproductor IPTV de escritorio para Windows, hecho con Flutter.
 Reproduce las listas que tú añadas (Xtream Codes o M3U). **No incluye canales ni contenido de ningún tipo.**
 
 ## Funciones
